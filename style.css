@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 :root{
-  --primary-dark:#1F2937;
-  --primary-green:#6EE7B7;
+  --primary-color:#007FFF;
 }
 body{
-  background-color: var(--primary-dark);
-  color:var(--primary-green);
+  /* background-color: var(--primary-red); */
+  color:var(--primary-color);
   font-family: 'Montserrat', sans-serif;
+  display: block;
 }
 
 
@@ -15,26 +15,53 @@ h1{
 }
 
 .container{
-  width:50%;
-  margin: auto;
+  padding:0rem 1rem;/**Paddin:TRBL,Top Right Bottom Left**/
+}
+
+.container-center{
+  max-width: 600px;
+  margin:auto
+}
+.section{
+  padding:2rem;
+  text-align: center;
+ 
+}
+.section h1{
+  text-align: center;
+  font-size: 3rem;
   
 }
-input,label{
-  display:block;
-  
+label{
+  text-align: center;
+  color: var(--primary-color);
+  font-size: 2rem;
 }
 input{
-  margin-bottom:0.5rem;
-  width:100%;
+  padding: 1rem 1rem 0.5rem 0.5rem;
+  border-radius: 1rem;
+  border-color:  var(--primary-color);
+  text-align: center;
 }
 #check-number{
   display: block;
   margin-top: 1rem;
   margin:auto;
-  background-color: transparent;
-  color:var(--primary-green);
-  border-color:var(--primary-green);
-  border-width:medium;
-  padding:0.5rem;
+  background-color: var(--primary-color);
+  color:white;
+  border-color:var(--primary-color);
   border-radius: 0.5rem;
+  width: 10rem;
+  height: 3rem;
+}
+
+@media(max-width:768px){
+  html{
+      font-size:45%;
+  }
+}
+@media(max-width:998px){
+  html{
+      font-size: 55%;
+  }
 }
